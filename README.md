@@ -8,7 +8,7 @@
 4. [Collaboration](#collaboration)
 <!-- 5. [FAQs](#faqs) -->
 
-### General Info
+## General Info
 
 This repository contains some examples with TypeScript.
 
