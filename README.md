@@ -10,15 +10,11 @@
 
 ### General Info
 
----
-
 This repository contains some examples with TypeScript.
 
 <!-- ### Screenshot -->
 
 ## Technologies
-
----
 
 A list of technologies used within the project:
 
@@ -26,8 +22,6 @@ A list of technologies used within the project:
 - [TypeScript](https://www.typescriptlang.org/): Version 4.9
 
 ## Installation
-
----
 
 A little intro about the installation.
 
@@ -40,8 +34,6 @@ $ tsc --version
 <!-- Side information: To use the application in a special environment use `lorem ipsum` to start -->
 
 ## Collaboration
-
----
 
 > Just create a pull request if you want add a new explain using TS.
 
