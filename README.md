@@ -12,7 +12,7 @@
 
 TypeScript analyses my code constantly. And can give great information on my code without me needing to do anything.
 
-If you want to check your JavaScript code with typescript parser, just add this in your first line
+If you want to check your JavaScript code with typescript parser, and your use VS Code, just add this in your first line
 ``//@ts-check``
 
 <!-- ### Screenshot -->
@@ -32,7 +32,8 @@ A little intro about the installation.
 $ sudo pacman -S nodejs npm
 $ npm install -D typescript // Not global
 $ sudo npm install -g typescript@latest // Global
-$ npx tsc --version
+$ npx tsc --version // Not global
+# tsx --version // Global
 ```
 
 For this project just install its dependencies.
