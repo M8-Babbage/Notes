@@ -6,6 +6,7 @@
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
+4. [TypeScript Examples](TYPESCRIPT.md)
 <!-- 5. [FAQs](#faqs) -->
 
 ## General Info
@@ -46,7 +47,7 @@ $ npm install
 
 ## Collaboration
 
-> Just create a pull request if you want add a new explain using TS.
+> Just create a pull request if you want to add a new explain using TS.
 
 <!-- ## FAQs
 
