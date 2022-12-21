@@ -33,10 +33,13 @@ Global installation
 
 ```javascript
 $ sudo pacman -S nodejs npm
-// If you want to run node directly with TS without transpile ts-node main.ts, install ts-node and tslib
+// If you want to run node directly with TS without transpile, install ts-node and tslib
 $ sudo npm install -g typescript ts-node tslib @types/node
 $ tsc --version // typescript version
 $ ts-node --version // typescript node version
+
+// To run typescript directly with ts-node
+$ ts-node main.ts
 ```
 
 Poject installation
@@ -47,6 +50,9 @@ $ sudo pacman -S nodejs npm
 $ sudo npm install -D typescript ts-node tslib @types/node
 $ npx tsc --version // typescript version
 $ npx ts-node --version // typescript node version
+
+// To run typescript directly with ts-node
+$ npx ts-node main.ts
 ```
 
 For this project just install its dependencies.
