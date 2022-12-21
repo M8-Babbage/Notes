@@ -13,7 +13,7 @@
 
 TypeScript analyses my code constantly. And can give great information on my code without me needing to do anything.
 
-If you want to check your JavaScript code with typescript parser, and your use VS Code, just add this in your first line
+If you want to check your JavaScript code with typescript parser, and you use VS Code, just add this in your first line
 `//@ts-check`
 
 <!-- ### Screenshot -->
