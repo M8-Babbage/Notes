@@ -6,7 +6,7 @@
 2. [Technologies](#technologies)
 3. [Installation](#installation)
 4. [Collaboration](#collaboration)
-4. [TypeScript Examples](TYPESCRIPT.md)
+5. [TypeScript Examples](TYPESCRIPT.md)
 <!-- 5. [FAQs](#faqs) -->
 
 ## General Info
@@ -14,7 +14,7 @@
 TypeScript analyses my code constantly. And can give great information on my code without me needing to do anything.
 
 If you want to check your JavaScript code with typescript parser, and your use VS Code, just add this in your first line
-``//@ts-check``
+`//@ts-check`
 
 <!-- ### Screenshot -->
 
@@ -29,12 +29,24 @@ A list of technologies used within the project:
 
 A little intro about the installation.
 
+Global installation
+
 ```javascript
 $ sudo pacman -S nodejs npm
-$ npm install -D typescript // Not global
-$ sudo npm install -g typescript@latest // Global
-$ npx tsc --version // Not global
-$ tsc --version // Global
+// If you want to run node directly with TS without transpile ts-node main.ts, install ts-node and tslib
+$ sudo npm install -g typescript ts-node tslib @types/node
+$ tsc --version // typescript version
+$ ts-node --version // typescript node version
+```
+
+Poject installation
+
+```javascript
+$ sudo pacman -S nodejs npm
+// If you want to run node directly with TS without transpile ts-node main.ts, install ts-node and tslib
+$ sudo npm install -D typescript ts-node tslib @types/node
+$ npx tsc --version // typescript version
+$ npx ts-node --version // typescript node version
 ```
 
 For this project just install its dependencies.
