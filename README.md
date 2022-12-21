@@ -33,7 +33,7 @@ $ sudo pacman -S nodejs npm
 $ npm install -D typescript // Not global
 $ sudo npm install -g typescript@latest // Global
 $ npx tsc --version // Not global
-$ tsx --version // Global
+$ tsc --version // Global
 ```
 
 For this project just install its dependencies.
