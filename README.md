@@ -55,7 +55,18 @@ $ npx ts-node --version // typescript node version
 $ npx ts-node main.ts
 ```
 
-For this project just install its dependencies.
+Install nodemon to watch changes using typescript directly.
+
+```javascript
+$ sudo npm i -g nodemon // globaly
+$ npm i -D nodemon // locally
+
+// Watch ts changes using the demon
+$ nodemon main.ts // globally
+$ npx nodemon main.ts // locally
+```
+
+For this project just install its dependencies and check examples.
 
 ```javascript
 $ npm install

@@ -4,7 +4,7 @@
 
 A little intro about the TS Compiler/Transpiler.
 
-Use npx tsc if you're using typescript inside the project, and just tsc if not.
+Use npx tsc if you're using typescript within the project, and just tsc if not.
 
 ```javascript
 $ npx tsc --init // Create a initial file to setup typescript
