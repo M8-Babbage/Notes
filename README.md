@@ -10,7 +10,10 @@
 
 ## General Info
 
-This repository contains some examples with TypeScript.
+TypeScript analyses my code constantly. And can give great information on my code without me needing to do anything.
+
+If you want to check your JavaScript code with typescript parser, just add this in your first line
+``//@ts-check``
 
 <!-- ### Screenshot -->
 
@@ -25,10 +28,17 @@ A list of technologies used within the project:
 
 A little intro about the installation.
 
-```
+```javascript
 $ sudo pacman -S nodejs npm
-$ sudo npm install -g typescript
-$ tsc --version
+$ npm install -D typescript // Not global
+$ sudo npm install -g typescript@latest // Global
+$ npx tsc --version
+```
+
+For this project just install its dependencies.
+
+```javascript
+$ npm install
 ```
 
 <!-- Side information: To use the application in a special environment use `lorem ipsum` to start -->

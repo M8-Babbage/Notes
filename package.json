@@ -1,0 +1,29 @@
+{
+  "name": "typescript-god",
+  "version": "0.0.0",
+  "description": "TypeScript God",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M8-Babbage/typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "npm",
+    "javascript",
+    "esnext"
+  ],
+  "author": "Edwin J. Páez <M8-Babbage>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M8-Babbage/typescript/issues"
+  },
+  "homepage": "https://github.com/M8-Babbage/typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
