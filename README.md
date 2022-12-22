@@ -24,6 +24,8 @@ A list of technologies used within the project:
 
 - [Node JS](https://nodejs.org/en/download/package-manager/#arch-linux): Version 19.3
 - [TypeScript](https://www.typescriptlang.org/): Version 4.9
+- [TS-Node](https://www.npmjs.com/package/ts-node): Version 10.9.1
+- [Nodemon](https://www.npmjs.com/package/nodemon): Version 2.0.20
 
 ## Installation
 
