@@ -30,9 +30,10 @@
   // ---------------------------- STRINGS -------------------------------//
   // ["iPhone12", 'iPhone12', `iPhone12`] las comillas                   //
   // --------------------------------------------------------------------//
-  const productName: string = `iPhone 12`;
-  const otherProductName: string = "iPhone 12 " + productName;
-  const anotherProductName: string = `iPhone 12 ${otherProductName}`;
+  const productName: string = `Fernandez`;
+  const otherProductName: string = "Susano " + productName;
+  const anotherProductName: string = `Laura ${otherProductName}`;
+  console.log(anotherProductName);
 
   // --------------------------------------------------------------------//
   // -------------------------- UNION TYPES------------------------------//
@@ -68,7 +69,11 @@
   // [number, string, boolean, Date, any], cualquier tipo de dato        //
   // Es un arreglo con una dimensión fija, y con más rendimiento
   // --------------------------------------------------------------------//
-  let person: [edad: number, nombre: string, estado : boolean] = [1, "Steve", true];
+  let person: [edad: number, nombre: string, estado: boolean] = [
+    1,
+    "Steve",
+    true
+  ];
   let newPerson: [number, string, boolean] = [1, "Steve", true];
 
   // --------------------------------------------------------------------//
@@ -93,7 +98,7 @@
   // ------------------------------ VOID --------------------------------//
   // Sirve para decir que una función no retorna nada                    //
   // --------------------------------------------------------------------//
-  const returnAvoid = (name?: string): void => {
+  const returnVoid = (name?: string): void => {
     console.log(`${name ? name : "Unknown"}`);
   };
 
@@ -105,7 +110,7 @@
   let myNull: null = null;
   let myUndefined: undefined = undefined;
 
-  // Optional chaining, puede ser usado en types, parámetros, interfaces, para decir que es opcional, si myName llegase a ser nulo, asignaría 'Sin nombre'
+  // Optional chaining, puede ser usado en types, parámetros, interfaces, para decir que es opcional, si myName llegase a ser falsy, asignaría 'Sin nombre'
   const lettersName = myName?.length || "Sin nombre";
 
   // --------------------------------------------------------------------//
