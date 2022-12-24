@@ -150,7 +150,5 @@
   function throwError(errorMsg: string): never {
     throw new Error(errorMsg);
   }
-  console.log(
-    `15. Never: ${throwError("Error generado por el desarrollador")}`
-  );
+  console.log(`15. Never: "Error generado por el desarrollador"`);
 })();

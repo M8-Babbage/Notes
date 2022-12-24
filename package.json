@@ -4,7 +4,9 @@
   "description": "TypeScript God",
   "main": "./src/types.ts",
   "scripts": {
-    "types": "npx ts-node ./src/types.ts"
+    "types": "npx ts-node ./src/types.ts",
+    "functions": "npx ts-node ./src/functions.ts",
+    "destructuring": "npx ts-node ./src/destructuring.ts"
   },
   "repository": {
     "type": "git",
