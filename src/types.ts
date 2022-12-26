@@ -89,9 +89,9 @@
     true
   ];
   let newPerson: [number, string, boolean] = [1, "Steve", true];
-  console.log(
-    `8. Tuples: ${newPerson} ( let person: [edad: number, nombre: string, estado: boolean] )`
-  );
+  let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]];
+  console.log( `8 A. Tuples: ${newPerson} ( let person: [edad: number, nombre: string, estado: boolean] )`);
+  console.log( `8 B. Tuples: ${infiniteTuple} ( let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]] )`);
 
   // --------------------------------------------------------------------//
   // -------------------------------- ANY -------------------------------//

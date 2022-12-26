@@ -6,7 +6,8 @@
   "scripts": {
     "types": "npx ts-node ./src/types.ts",
     "functions": "npx ts-node ./src/functions.ts",
-    "destructuring": "npx ts-node ./src/destructuring.ts"
+    "destructuring": "npx ts-node ./src/destructuring.ts",
+    "enums": "npx ts-node ./src/enums.ts"
   },
   "repository": {
     "type": "git",
