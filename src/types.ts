@@ -89,9 +89,17 @@
     true
   ];
   let newPerson: [number, string, boolean] = [1, "Steve", true];
-  let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]];
-  console.log( `8 A. Tuples: ${newPerson} ( let person: [edad: number, nombre: string, estado: boolean] )`);
-  console.log( `8 B. Tuples: ${infiniteTuple} ( let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]] )`);
+  let infiniteTuple: [number, boolean, string[]] = [
+    20,
+    true,
+    ["Laura", "Ximena", "Susano"]
+  ];
+  console.log(
+    `8 A. Tuples: ${newPerson} ( let person: [edad: number, nombre: string, estado: boolean] )`
+  );
+  console.log(
+    `8 B. Tuples: ${infiniteTuple} ( let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]] )`
+  );
 
   // --------------------------------------------------------------------//
   // -------------------------------- ANY -------------------------------//
@@ -151,4 +159,10 @@
     throw new Error(errorMsg);
   }
   console.log(`15. Never: "Error generado por el desarrollador"`);
+  // Inferencia de tipo never
+  const withoutEnd = () => {
+    while (true) {
+      console.log("Withoud End");
+    }
+  };
 })();
