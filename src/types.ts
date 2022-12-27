@@ -127,6 +127,14 @@
       unknownObject
     )}, no puede llamar propiedades del objeto directamente`
   );
+  // Para ejecutar alguna propiedad del unknown debemos validar su tipo
+  const isUnknown = (input: unknown) => {
+    if (typeof input === "string") {
+      return "Laura Susano";
+    } else if (Array.isArray(input)) {
+      return input;
+    }
+  };
 
   // --------------------------------------------------------------------//
   // ------------------------------ VOID --------------------------------//
