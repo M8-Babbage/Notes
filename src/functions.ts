@@ -5,7 +5,7 @@
   // --------------------------------------------------------------------//
   function getUser(
     name: string, // Parámetro obligatorio
-    lastname: string = "Rueda", // Parámetro por defecto
+    lastname: string = "Susano", // Parámetro por defecto
     status?: boolean // Parámetro opcional
   ): string {
     // Retorna un string
@@ -20,7 +20,7 @@
   // --------------------------------------------------------------------//
   const getOldUser = (
     name: string, // Parámetro obligatorio
-    lastname: string = "Rueda", // Parámetro por defecto
+    lastname: string = "Susano", // Parámetro por defecto
     status?: boolean // Parámetro opcional
   ): string => {
     // retorna un string
@@ -29,5 +29,5 @@
     }
 3. ${status ?? "Status null o undefined: Nullish coalescing"}`;
   };
-  console.log(getOldUser("Laura", "Susano"));
+  console.log(getOldUser("Laura"));
 })();
