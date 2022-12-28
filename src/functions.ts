@@ -34,14 +34,9 @@
   // --------------------------------------------------------------------//
   // ---------------------------- OVERLOAD ------------------------------//
   // --------------------------------------------------------------------//
-  // Laura => [L,a,u,r,a] => string => string[]
-  // [L,a,u,r,a] => Laura => string[] => string
+  // Buenas practicas, si hay un any o un unkown en el overload se deja al final
   function parseStr(input: string): string[];
   function parseStr(input: string[]): string;
-  // TypeScript en este caso no podrá inferir el tipo de retorno con exactitud
-  // Por eso le hacemos la sobrecarga de las líneas de arriba
-  // Buenas practicas, si hay un any o un unkown en el overload se deja al final
-
   function parseStr(input: unknown): unknown {
     if (Array.isArray(input)) {
       return input.join(""); // string
