@@ -3,8 +3,14 @@
   // -------------------------- INTERFACES ------------------------------//
   // Permite nuevas propiedades y métodos
   // --------------------------------------------------------------------//
-  interface Address {
-    id: number; // Propiedad obligatoria
+  // Interface base para extender
+  interface BaseModel {
+    id: string | number;
+    createdAt?: Date;
+    updatedAt?: Date;
+  }
+
+  interface Address extends BaseModel {
     name?: string; // Propiedad opcional
     location: string[]; // Propiedad de tipo array
     getAddress?: () => string; // Método que retorna un string
@@ -20,6 +26,7 @@
   // No permite nuevas propiedades y métodos
   // --------------------------------------------------------------------//
   type newUser = {
+    readonly id: string; // Propiedad obligatoria que solo se podrá asignar 1 vez y no se podrá editar
     name: string; // Propiedad obligatoria
     address: Address; // Propiedad de tipo interface
     skills: string[]; // Propiedad de tipo array
@@ -29,9 +36,12 @@
 
   // Ejemplo de construcción con types y interfaces
   const newUser: newUser = {
+    id: "01",
     name: "Laura",
     address: {
       id: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
       name: "Altamira",
       location: ["Calle", "4", "5-16"],
       status: false
@@ -42,6 +52,8 @@
       return `${this.name} vive en ${this.address?.name} en ${this.address?.location}, ${this.address?.status}`;
     }
   };
+
+  // newUser.id = "Nuevo ID, no se puede porque es solo lectura"
 
   // Mostramos el usuario generado
   console.log(`1. Nuevo usuario: ${JSON.stringify(newUser)}`);
