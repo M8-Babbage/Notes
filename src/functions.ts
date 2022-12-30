@@ -8,11 +8,11 @@
     status?: boolean // Parámetro opcional
   ): string {
     // Retorna un string
-    return `1. My name is ${name} ${lastname}, status: ${
+    return `My name is ${name} ${lastname}, status: ${
       status ? status : "Desconocido"
     }`;
   }
-  console.log(getUser("Laura", "Susano", true));
+  getUser("Laura", "Susano", true);
 
   // --------------------------------------------------------------------//
   // ------------------ ARROW FUNCTIONS - EXPRESION ---------------------//
@@ -28,7 +28,8 @@
     }
 3. ${status ?? "Status null o undefined: Nullish coalescing"}`;
   };
-  console.log(getOldUser("Laura"));
+  getOldUser("Laura", "Susano");
+  getOldUser("Laura", "Susano", true);
 
   // --------------------------------------------------------------------//
   // ---------------------------- OVERLOAD ------------------------------//
@@ -43,8 +44,6 @@
       return input.split(""); // string[]
     }
   }
-  console.log(
-    `4. Overload: Array to String ${parseStr(["L", "a", "u", "r", "a"])}`
-  );
-  console.log(`5. Overload: String to Array ${parseStr("Laura")}`);
+  parseStr(["L", "a", "u", "r", "a"]);
+  parseStr("Laura");
 })();

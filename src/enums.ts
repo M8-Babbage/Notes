@@ -27,12 +27,6 @@
     size: Size;
   };
 
-  // Estructura del enum
-  console.log(`1. Enum: Roles ${JSON.stringify(Roles)}`); // S
-
-  // Apuntamos al valor de MEMIUM en el enum SIZE
-  console.log(`2. Enum: Size: ${Size.Medium}`); // 3
-
   // Crear un objeto que cumpla con el type User
   const user: User = {
     name: "Laura",
@@ -40,7 +34,4 @@
     rol: Roles.Admin,
     size: Size.Small
   };
-
-  // Mostramos el usuario en la consola
-  console.log(`3. Objeto User con Enums: ${JSON.stringify(user)}`);
 })();
