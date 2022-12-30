@@ -72,4 +72,12 @@
   };
 
   // newUser.id = "Nuevo ID, no se puede porque es solo lectura"
+
+  // Acceder al tipado por índice - en este caso el id de base model es string, entonces recibirá un string
+  const indexAccess = (id: BaseModel["id"]): BaseModel["id"] => {
+    return id;
+  };
+  // indexAccess(true) // Error
+  indexAccess(20);
+  indexAccess("20");
 })();
