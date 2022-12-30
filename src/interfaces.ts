@@ -10,6 +10,7 @@
     updatedAt?: Date;
   }
 
+  // Extender la interfaz Base Model
   interface Address extends BaseModel {
     name?: string; // Propiedad opcional
     location: string[]; // Propiedad de tipo array
@@ -20,6 +21,23 @@
   interface Address {
     status: boolean;
   }
+
+  // --------------------------------------------------------------------//
+  // ------------------------ UTILITY TYPES -----------------------------//
+  // --------------------------------------------------------------------//
+  // De esta manera podemos extender una interfaz pero omitir ciertos valores
+  interface OmitInterface extends Omit<BaseModel, "createdAt" | "updatedAt"> {}
+  // De esta manera podemos extender una interfaz pero seleccionar solamente ciertos valores
+  interface PickInterface extends Pick<BaseModel, "id" | "createdAt"> {}
+  // De esta manera podemos extender una interfaz y que todos sus atributos sean opcionales
+  interface PartialInterface extends Partial<BaseModel> {}
+  // De esta manera podemos extender una interfaz y que todos sus atributos sean requeridos
+  interface RequiredInterface extends Required<BaseModel> {}
+  // De esta manera podemos extender una interfaz y que todos sus atributos sean de lectura
+  interface ReadOnlyInterface extends Required<BaseModel> {}
+
+  // Los utility types pueden ser anidados, de esta manera, todos son opcionales pero solo en modo lectura
+  interface JoinUtilitiesInterface extends Readonly<Partial<BaseModel>> {}
 
   // --------------------------------------------------------------------//
   // ---------------------------- TYPES ---------------------------------//
