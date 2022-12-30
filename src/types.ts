@@ -68,9 +68,17 @@
   // [number, string, boolean, Date, any], cualquier tipo de dato        //
   // Es un arreglo con una dimensión fija, y con más rendimiento
   // --------------------------------------------------------------------//
-  let person: [edad: number, nombre: string, estado: boolean] = [1, "Steve", true];
+  let person: [edad: number, nombre: string, estado: boolean] = [
+    1,
+    "Steve",
+    true
+  ];
   let newPerson: [number, string, boolean] = [1, "Steve", true];
-  let infiniteTuple: [number, boolean, string[]] = [20, true, ["Laura", "Ximena", "Susano"]];
+  let infiniteTuple: [number, boolean, string[]] = [
+    20,
+    true,
+    ["Laura", "Ximena", "Susano"]
+  ];
 
   // --------------------------------------------------------------------//
   // -------------------------------- ANY -------------------------------//
@@ -105,7 +113,7 @@
   // Sirve para decir que una función no retorna nada                    //
   // --------------------------------------------------------------------//
   const returnVoid = (name?: string): void => {
-    'Just a Void Function'
+    "Just a Void Function";
   };
   returnVoid("Laura");
 
@@ -119,10 +127,10 @@
 
   // Optional chaining, puede ser usado en types, parámetros, interfaces, para decir que es opcional, si myName llegase a ser falsy, asignaría 'Sin nombre'
   const optionalChaining = (myName: string | null): string => {
-    return  `Optional chaining ${myName?.length || "Sin nombre"}`;
-  }
-  optionalChaining('Laura')
-  optionalChaining(null)
+    return `Optional chaining ${myName?.length || "Sin nombre"}`;
+  };
+  optionalChaining("Laura");
+  optionalChaining(null);
 
   // --------------------------------------------------------------------//
   // ------------------------------ NEVER -------------------------------//
@@ -138,4 +146,14 @@
       return;
     }
   };
+
+  // --------------------------------------------------------------------//
+  // ------------------------ READ ONLY ARRAY ---------------------------//
+  // --------------------------------------------------------------------//
+  // Evitar mutaciones en los arreglos
+  const readArray: ReadonlyArray<number> = [1, 2, 3, 4];
+  // El método filter regresa un nuevo arreglo por ende no muta el arreglo original y puede ser usado
+  readArray.filter((item) => {
+    return item;
+  });
 })();

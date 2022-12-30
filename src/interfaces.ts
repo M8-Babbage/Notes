@@ -39,6 +39,12 @@
   // Los utility types pueden ser anidados, de esta manera, todos son opcionales pero solo en modo lectura
   interface JoinUtilitiesInterface extends Readonly<Partial<BaseModel>> {}
 
+  // ReadOnlyArray, se omite el ID, se colocan todos opcionales y se colocan todos en modo readonly
+  // Recordar que el ReadOnlyArray no permite mutar, y el readonly en el property no permite reasignaciones
+  interface readOnlyInterface extends Readonly<Partial<Omit<BaseModel, "id">>> {
+    readonly id: ReadonlyArray<string>;
+  }
+
   // --------------------------------------------------------------------//
   // ---------------------------- TYPES ---------------------------------//
   // No permite nuevas propiedades y métodos
