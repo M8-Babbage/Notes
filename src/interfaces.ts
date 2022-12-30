@@ -72,10 +72,4 @@
   };
 
   // newUser.id = "Nuevo ID, no se puede porque es solo lectura"
-
-  // Mostramos el usuario generado
-  console.log(`1. Nuevo usuario: ${JSON.stringify(newUser)}`);
-  console.log(
-    `2. Retorno de la función dentro del objeto: ${newUser.getName!()}`
-  );
 })();
