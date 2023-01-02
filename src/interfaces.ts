@@ -34,7 +34,7 @@
   // De esta manera podemos extender una interfaz y que todos sus atributos sean requeridos
   interface RequiredInterface extends Required<BaseModel> {}
   // De esta manera podemos extender una interfaz y que todos sus atributos sean de lectura
-  interface ReadOnlyInterface extends Required<BaseModel> {}
+  interface ReadOnlyInterface extends Readonly<BaseModel> {}
 
   // Los utility types pueden ser anidados, de esta manera, todos son opcionales pero solo en modo lectura
   interface JoinUtilitiesInterface extends Readonly<Partial<BaseModel>> {}
