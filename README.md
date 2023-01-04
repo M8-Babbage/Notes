@@ -5,6 +5,4 @@
 1. [TypeScript](./typescript/)
 2. [NPM](./npm/)
 3. [Node](./node/)
-
-## General Info
-Check my notes!
+4. [JavaScript](./javascript/)
